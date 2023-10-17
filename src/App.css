@@ -1,0 +1,73 @@
+body {
+  margin: 0 25px;
+  background-color: black;
+  color: white;
+  font-family: "Gill Sans", sans-serif;
+}
+.App {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  /* margin: 15px; */
+}
+
+.img-container {
+  margin-right: 20px;
+  position: relative;
+box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+.img {
+
+  width: 250px;
+  height: 350px;
+}
+.overlay {
+  /* margin-right: 12px; */
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 15px 0 28px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  opacity: 0;
+  color: white;
+  transition: .5s ease;
+  text-align: center;
+}
+.img-container:hover .overlay {
+  opacity: 1;
+
+}
+.img-container:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+div ::-webkit-scrollbar {
+  width: 0PX;
+
+}
+.head {
+  margin: 15px 1px;
+  display: flex;
+  justify-content: space-between;
+}
+.head>input {
+  width: 30%;
+  height: 30px;
+  align-self: center;
+  border-radius: 5px;
+}
+.color{
+  color: red;
+}
+@media only screen and (max-width:768px){
+  .head>input {
+    width: 50%;
+    height: 30px;
+  }
+}
+.icon{
+  margin-right: 0.5rem;
+}
